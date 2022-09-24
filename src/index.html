@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>L Chat Application</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="functions.js"></script>
+</head>
+
+<body>
+    <div class="left">
+        <header class="jump"><h1>Chat Application</h1></header>
+
+        <div class="chatbox">
+            <p>Username</p>
+            <input type="text" id="Username">
+            <p>Message </p>
+            <textarea rows="16" cols="30" id="Message"></textarea> <br>
+            <button type="button" name="send" onclick="OnClick()"> Send </button>
+        </div>
+    </div>
+
+    <div class="right">
+        <section class="grid" id="content">
+
+        </section>
+    </div>
+    <script>Update(true, 5000)</script>
+</body>
+
+<footer>
+    <p> Made by Jonathan, Hannes & Filip</p>
+    <p> <a href="mailto:chatapplication@example.com">chatapplikation@example.com</a></p>
+</footer>
+</html>

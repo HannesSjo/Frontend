@@ -1,0 +1,94 @@
+:root{
+    --bg-color: #2b2a33;
+    background-color: var(--bg-color);
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    --mh: 100vh;
+    min-height:var(--mh) ;
+    font-size:13px;
+}
+
+.grid {
+    min-height:var(--mh) ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 1em;
+    
+}
+
+.left {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    color: white;
+}
+.right {
+    width: 100%;
+    color:black;
+
+}
+article{
+    float:left;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius: 5px;
+}
+h1{
+    font-size: 6.8vh;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 200px;
+}
+.flexbox {
+    background-color: white;
+    padding: 0 10px;
+}
+a {
+    color: white
+}
+
+p.username {
+    font-weight: bold;
+    margin-right:20px;
+}
+p.message {
+    margin-right: 20px;
+}
+textarea {
+    width: 100%;
+}
+input {
+    width: 100%;
+}
+
+button{
+    margin: 20px 5px;
+}
+
+@keyframes jump {
+    0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+    40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+    100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+  }
+  .jump {
+    transform-origin: 50% 50%;
+    animation: jump .5s linear alternate infinite;
+  }
+
+  @media (min-width: 700px) {
+    .left{
+        float: left;
+        width: 50%;
+    }
+    .right{
+        float: right;
+        width: 50%;
+    }
+    input{
+        width: 50%;
+    }
+    textarea {
+        width: 50%;
+    }
+  }

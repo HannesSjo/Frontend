@@ -1,0 +1,1 @@
+Add token before usage in functions.js row 1
